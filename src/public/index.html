@@ -12,9 +12,24 @@
     <nav class="navbar navbar-light expand-sm bg-warning">
         <a class="navbar-brand mx-auto" href="/">FullStack chat JavaScript</a>
     </nav>
+    <div class="row">
+        <div class="col-md-5 card mt-4 mx-auto" id="loginWrap">
+            <div class="card-header">
+                <h4>Ingresa tu nombre de usuario</h4>
+            </div>
+            <p id="usernameError"></p>
+            <div class="card-body">
+                <form id="fomUser">
+                    <input type="text" id="usuario" class="form-control">
+                    <input type="submit" value="Ingresar al chat" class="btn btn-warning mt-2">
+                </form>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="row">
-            <div class="col-md-6 mt-4">
+            <div class="col-md-7 mt-4" id="chatWrap">
                 <div class="card">
                     <div class="card-header">
                         <h4>Let's chat</h4>
@@ -32,7 +47,7 @@
                     </form>
                 </div>
             </div>
-            <div class="col-md-6"></div>
+            <div class="col-md-5 mt-5"></div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
